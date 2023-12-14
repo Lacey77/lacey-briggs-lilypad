@@ -1,0 +1,941 @@
+html {
+  font-family: "roboto", sans-serif;
+  font-family: "oswald", sans-serif;
+}
+
+/* Header Links */
+
+/* link decoration */
+#a-header a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+#a-header a:link {
+  color: #23291f;
+}
+
+/* visited link */
+#a-header a:visited {
+  color: #23291f;
+}
+
+/* mouse over link */
+#a-header a:hover {
+  color: #fff;
+}
+
+/* selected link */
+#a-header a:active {
+  color: #fff;
+}
+
+/* Nav Links */
+
+/* link decoration */
+#a-nav a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+#a-nav a:link {
+  color: #23291f;
+}
+
+/* visited link */
+#a-nav a:visited {
+  color: #23291f;
+}
+
+/* mouse over link */
+#a-nav a:hover {
+  color: #b4c0a7;
+}
+
+/* selected link */
+#a-nav a:active {
+  color: #b4c0a7;
+}
+
+body {
+  background-image: url(../images/BG_Drawing3.png);
+  background-size: 180px;
+  background-repeat: repeat;
+  padding: auto auto;
+  margin: 0;
+}
+
+/* Header Top */
+
+header {
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+/* Search Bar Top */
+
+.search-parent {
+  flex-grow: 1;
+}
+
+.search-box {
+  /* margin-top: 24px; */
+  width: 100%;
+}
+
+.search-container {
+  max-width: 932px;
+  /* display: block; */
+  margin: 0 auto;
+
+  display: flex;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 59px;
+  padding: 0 20px;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  border: 1px solid black;
+  border-right: 0;
+  outline: black;
+  &:focus {
+    border: 1px solid #008abf;
+    transition: 0.35s ease;
+    color: #008abf;
+    &::-webkit-input-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+    &:-ms-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+  }
+}
+
+.search-button {
+  height: 61px;
+  width: 60px;
+  background-color: #fff;
+  border: 1px #000 solid;
+  border-left: 0;
+  margin-left: -1px;
+  background-image: url(../images/search.png);
+  background-size: 90%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Search Bar End */
+
+.logo {
+  width: 136px;
+  height: 86px;
+}
+
+.header-top {
+  width: 100%;
+  background-color: #b4c0a7;
+}
+
+.header-top-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-top-content ul {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header-top-content li {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  display: inline-flex;
+  margin: 0 20px;
+  padding-inline-start: 2em;
+  padding-left: 0;
+  text-align: center;
+}
+
+.header-top-content ul li a > * {
+  vertical-align: middle;
+}
+
+.header-top-content ul li span {
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 1316px) {
+  .header-top-content ul li span {
+    margin-left: 0;
+  }
+}
+
+/* Header Bottom */
+
+.header-bottom {
+  background-color: #fff;
+  margin: 0 auto auto auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.header-bottom-content {
+  margin: auto;
+  width: 80%;
+  height: 65px;
+}
+
+.header-bottom-content ul {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+/* Main */
+
+/* AC Links */
+
+/* link decoration */
+#a-ac a {
+  font-family: "oswald", sans-serif;
+  font-size: 19px;
+}
+
+/* unvisited link */
+#a-ac a:link {
+  color: #23291f;
+}
+
+/* visited link */
+#a-ac a:visited {
+  color: #23291f;
+}
+
+/* mouse over link */
+#a-ac a:hover {
+  color: #b4c0a7;
+}
+
+/* selected link */
+#a-ac a:active {
+  color: #b4c0a7;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(81, 79, 79, 0.2);
+}
+
+/* Arts & Craft Section */
+
+.ac-section {
+  height: 100px;
+}
+
+.ac-section-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.ac-section-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.ac-section-head a {
+  text-decoration-line: underline;
+  color: #23291f;
+  padding-left: 20px;
+  font-family: "oswald", sans-serif;
+  font-size: 19px;
+  font-weight: medium;
+}
+
+.ac-section-background-img {
+  background-image: url(../images/section_bkg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.15));
+}
+
+.ac-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start space-evenly;
+  /* padding: 0 3em; */
+  margin: 0 38.5px;
+}
+
+.ac-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.ac-product-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.ac-product-content {
+  font-family: "roboto", sans-serif;
+  width: 235px;
+  text-align: center;
+  padding-top: 3px;
+
+  height: 7em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ac-product-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 9px;
+}
+
+.ac-product-company {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.ac-product-price {
+  font-size: 16px;
+  margin-top: 6.4px;
+  flex-grow: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Local Section */
+
+.local-section {
+  height: 100px;
+}
+
+.local-section-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.local-section-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.local-image {
+  background-image: url("../images/Local.jpg");
+  height: 212px;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.local-button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.local-button:hover a {
+  color: #fff;
+}
+
+.local-button {
+  font-family: "oswald", sans-serif;
+  background-color: #fff;
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  color: black;
+  padding: 25px 59px;
+  text-align: center;
+  text-decoration: none;
+  float: inline-end;
+  display: block;
+  font-size: 19px;
+  margin: 4px 2px;
+
+  position: relative;
+  top: 29%;
+  right: 35px;
+}
+
+.local-button:hover {
+  background: #cad8c0;
+  border-color: #cad8c0;
+}
+
+.local-button:active {
+  background: #cad8c0;
+  border: #cad8c0;
+  color: #fff;
+}
+.local-button:focus {
+  background: #fff;
+}
+
+/* Jewelry Section */
+
+.jewelry-section {
+  height: 100px;
+}
+
+.jewelry-section-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.jewelry-section-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.jewelry-section-head a {
+  text-decoration-line: underline;
+  color: #23291f;
+  padding-left: 20px;
+  font-family: "oswald", sans-serif;
+  font-size: 19px;
+  font-weight: medium;
+}
+
+.jewelry-product-list {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: flex-start space-evenly;
+  padding: 0 3em;
+  margin: 0 38.5px;
+}
+
+.jewelry-product-image {
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.jewelry-product-content {
+  font-family: "roboto", sans-serif;
+  width: 232px;
+  padding-left: 14px;
+  text-align: left;
+  padding-top: 3px;
+}
+
+.jewelry-product-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.jewelry-product-company {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.jewelry-product-price {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Index.html gallery carousel */
+
+.gallery {
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.gallery-cell {
+  /* width: 200px;
+  height: 200px; */
+  margin-right: 10px;
+  /* background: #8c8; */
+  counter-increment: gallery-cell;
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #fff;
+}
+
+.flickity-prev-next-button:hover {
+  background: #b4c0a7;
+}
+
+.flickity-prev-next-button:active {
+  background: #b4c0a7;
+}
+
+.flickity-prev-next-button {
+  /* background-color: #23291f; */
+  background-color: #bababa;
+  border: none;
+  width: 25px;
+  height: 89px;
+  border-radius: 0;
+  position: absolute;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+/* Clothing Section */
+
+.clothing-section {
+  height: 100px;
+}
+
+.clothing-section-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.clothing-section-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.clothing-image {
+  background-image: url("../images/Lilypad21.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 212px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clothing-button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.clothing-button:hover a {
+  color: #fff;
+}
+
+.clothing-button {
+  font-family: "oswald", sans-serif;
+  background-color: #fff;
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  color: black;
+  padding: 25px 59px;
+  text-align: center;
+  text-decoration: none;
+  float: inline-end;
+  display: block;
+  font-size: 19px;
+  margin: 4px 2px;
+
+  position: relative;
+  top: 29%;
+  right: 35px;
+}
+
+.clothing-button:hover {
+  background: #cad8c0;
+  border-color: #cad8c0;
+}
+
+.clothing-button:active {
+  background: #cad8c0;
+  border: #cad8c0;
+  color: #fff;
+}
+.clothing-button:focus {
+  background: #fff;
+}
+
+/* Home & Living Section */
+
+.home-living-section {
+  height: 100px;
+}
+
+.home-living-section-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.home-living-section-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.home-living-section-head a {
+  text-decoration-line: underline;
+  color: #23291f;
+  padding-left: 20px;
+  font-family: "oswald", sans-serif;
+  font-size: 19px;
+  font-weight: medium;
+}
+
+.home-living-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start space-evenly;
+  padding: 0 3em;
+  margin: 0 38.5px;
+}
+
+.home-living-product {
+  margin: 32px 4px;
+}
+
+.home-living-product-image {
+  overflow: hidden;
+  width: 210px;
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-living-product-content {
+  font-family: "roboto", sans-serif;
+  width: 232px;
+  text-align: left;
+  padding-top: 3px;
+}
+
+.home-living-product-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-living-product-company {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.home-living-product-price {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Footer */
+
+/* Footer Links */
+
+/* link decoration */
+#a-footer a {
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+/* unvisited link */
+#a-footer a:link {
+  color: #23291f;
+}
+
+/* visited link */
+#a-footer a:visited {
+  color: #23291f;
+}
+
+/* mouse over link */
+#a-footer a:hover {
+  color: #fff;
+}
+
+/* selected link */
+#a-footer a:active {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto auto auto;
+  z-index: 100;
+  position: relative;
+}
+
+/* Footer Top */
+
+.footer-top {
+  background-color: #cad8c0;
+  height: 367px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.footer-top-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-info h1 {
+  font-family: "oswald", sans-serif;
+  font-size: 23px;
+  margin-top: 45px;
+  padding-bottom: 28px;
+  margin-bottom: 0;
+}
+
+.footer-info a {
+  padding: 0 0 28px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.footer-info > div {
+  margin-right: 2em;
+}
+
+.footer-info ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+.footer-info li {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-bottom {
+  width: 388px;
+  max-width: 20vw;
+  min-width: 200px;
+}
+
+.main-pages {
+  padding-left: 146px;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+  font-family: "oswald", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 113px;
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer-bottom-info {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment {
+  width: 196px;
+  height: 27.58px;
+}
+
+/* Jewelry Page */
+
+.jewelry {
+  height: 100px;
+}
+
+.jewelry-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.jewelry-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start space-evenly;
+  padding: 0 3em;
+  margin: 0 38.5px;
+}
+
+.product {
+  margin: 2em;
+}
+
+.product-image {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-content {
+  font-family: "roboto", sans-serif;
+  width: 232px;
+  text-align: left;
+  padding-top: 3px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-company {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.product-price {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Clothing Page */
+
+.clothing {
+  height: 100px;
+}
+
+.clothing-head {
+  padding-left: 83px;
+  padding-top: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.clothing-head h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.page-buttons {
+  padding-top: 41px;
+  padding-bottom: 35px;
+  padding-left: 83px;
+}
+
+.page-button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.page-button:hover a {
+  color: #fff;
+}
+
+.page-button {
+  font-family: "oswald", sans-serif;
+  display: inline-block;
+  font-size: 19px;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 29px;
+  background-color: #fff;
+  color: #000;
+  padding: 0 17px;
+  border: solid;
+  border-color: #000;
+  margin: 5px;
+}
+
+.page-button:hover {
+  background: #cad8c0;
+  border-color: #cad8c0;
+}
+
+.page-button:active {
+  background: #000;
+  border: #000;
+  color: #fff;
+}
+.page-button:focus {
+  background: #fff;
+}
